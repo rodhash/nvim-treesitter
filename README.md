@@ -63,9 +63,9 @@ For more detailed information on setting these up, see ["Advanced setup"](#advan
 
 ## Requirements
 
-- **Neovim 0.9.2** or later  ([nightly](https://github.com/neovim/neovim#install-from-source) recommended)
+- **Neovim 0.10.0** or later  ([nightly](https://github.com/neovim/neovim#install-from-source) recommended)
 - `tar` and `curl` in your path (or alternatively `git`)
-- A C compiler in your path and libstdc++ installed ([Windows users please read this!](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)).
+- A C compiler in your path ([Windows users please read this!](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)).
 
 ## Installation
 
@@ -621,8 +621,6 @@ If you wish to set a specific parser for a filetype, you should use `vim.treesit
 ```lua
 vim.treesitter.language.register('python', 'someft')  -- the someft filetype will use the python parser and queries.
 ```
-
-Note this requires Nvim v0.9.
 
 4. Start `nvim` and `:TSInstall zimbu`.
 
